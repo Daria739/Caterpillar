@@ -1,0 +1,24 @@
+/* colors */
+
+$black: #303030;
+$green: #7eb252;
+$lightgreen: #a4c58c;
+
+
+/* breakpoints */
+$tablets: 768px;
+$phones: 480px;
+
+/* normalize */
+@import "layout/normalize.css";
+
+/* media */
+@import "layout/media.scss";
+
+/* base settings */
+@import "layout/base.scss";
+
+
+/* blocks */
+@import "./blocks/hero.scss";
+@import "./blocks/header.scss";
