@@ -1,0 +1,62 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__row {
+    display: flex;
+    justify-content: space-between;
+
+    &_inputs {
+        margin-bottom: 1.875rem;
+    }
+
+    &_btn {
+        display: flex;
+        justify-content: flex-end;
+
+        position: relative;
+        left: 4%;
+        
+    }
+}
+
+.form__block-input {
+    border: none;
+    border-bottom: 1px solid $lightgreen;
+    padding-top: 0.625rem;
+    padding-bottom: 0.813rem;
+
+    &::placeholder {
+        color: $lightgreen;
+        font-size: 0.875rem;
+    }
+
+    &:focus,
+    &:active {
+        padding-left: 0.625rem;
+    }
+}
+
+.form__button {
+    min-width: 15.625rem;
+    background-color: #7eb252;
+
+    padding: 1.250rem;
+
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: $darkgreen;
+        transition: .2s ease;
+    }
+}
+
+.form__button-arrow {
+    margin-left: 1.188rem;
+}

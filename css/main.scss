@@ -3,6 +3,7 @@
 $black: #303030;
 $green: #7eb252;
 $lightgreen: #a4c58c;
+$darkgreen: #3e7311;
 
 
 /* breakpoints */
@@ -22,3 +23,5 @@ $phones: 480px;
 /* blocks */
 @import "./blocks/hero.scss";
 @import "./blocks/header.scss";
+@import "./blocks/window.scss";
+@import "./blocks/form.scss";
