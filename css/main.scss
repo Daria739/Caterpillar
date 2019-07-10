@@ -5,6 +5,41 @@ $green: #7eb252;
 $lightgreen: #a4c58c;
 $darkgreen: #3e7311;
 
+/* mixins */
+@mixin title {
+    font: {
+        size: 40px;
+        weight: bold;
+    }
+    margin-bottom: 30px;
+    color: $black;
+    line-height: 1.25;
+}
+
+@mixin button {
+    min-width: 15.625rem;
+    background-color: #7eb252;
+
+    padding: 1.250rem;
+
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: $darkgreen;
+        transition: .2s ease;
+    }
+}
+
 
 /* breakpoints */
 $tablets: 768px;
@@ -25,3 +60,17 @@ $phones: 480px;
 @import "./blocks/header.scss";
 @import "./blocks/window.scss";
 @import "./blocks/form.scss";
+@import "./blocks/features.scss";
+@import "./blocks/problems.scss";
+@import "./blocks/reviews-window.scss";
+@import "./blocks/popular.scss";
+@import "./blocks/popular-window.scss";
+@import "./blocks/history.scss";
+@import "./blocks/history-window.scss";
+@import "./blocks/quote.scss";
+@import "./blocks/gift.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/create.scss";
+@import "./blocks/quality.scss";
+@import "./blocks/quality-window.scss";
+@import "./blocks/footer.scss";

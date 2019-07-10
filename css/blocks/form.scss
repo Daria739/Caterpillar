@@ -39,22 +39,7 @@
 }
 
 .form__button {
-    min-width: 15.625rem;
-    background-color: #7eb252;
-
-    padding: 1.250rem;
-
-    font-size: 0.875rem;
-    font-weight: bold;
-    color: #ffffff;
-    text-transform: uppercase;
-
-    cursor: pointer;
-
-    &:hover {
-        background-color: $darkgreen;
-        transition: .2s ease;
-    }
+    @include button;
 }
 
 .form__button-arrow {

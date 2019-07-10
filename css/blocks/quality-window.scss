@@ -1,0 +1,46 @@
+.quality-window {
+    max-width: 570px;
+    background-color: #ffffff;
+
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quality-window__content {
+    width: 530px;
+    height: 275px;
+    border: solid 1px rgba(164, 197, 140, 0.6);
+    padding: 50px;
+    margin-bottom: 49px;
+}
+
+.quality-window__btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+.quality-window__btn-content {
+    @include button;
+}
+
+.quality-window__mark {
+    background-color: white;
+    position: relative;
+    bottom: 355px;
+    max-width: 40px;
+    left: 70px;
+
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.71;
+    letter-spacing: 0.7px;
+    color: $green;
+    text-transform: uppercase;
+}

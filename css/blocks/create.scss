@@ -1,0 +1,63 @@
+.create {
+    margin-top: 110px;
+    display: flex;
+}
+
+.create__img {
+    position: relative;
+    left: -4%;
+}
+
+.create__img-pic {
+    height: 80%;
+}
+
+.create__title {
+    @include title;
+}
+
+.create__content {
+
+    background-color: #ffffff;
+
+    padding: 17px;
+    position: relative;
+    left: -39%;
+    top: 19px;
+    z-index: 11;
+
+    max-height: 610px;
+}
+
+.create__content-text {
+    padding: 30px;
+    border: 1px solid $green;
+
+    width: 620px;
+}
+
+.create__content-desc {
+    font-size: 16px;
+    line-height: 1.38;
+    color: $black;
+    margin-bottom: 3%;
+}
+
+.create__mark {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.43;
+    letter-spacing: 0.7px;
+    color: $black;
+    text-transform: uppercase;
+    
+    display: block;
+    margin-top: 30px;
+}
+
+.create__btn {
+    margin-top: 60px;
+    display: block;
+
+    @include button;
+}
