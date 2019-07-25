@@ -1,9 +1,8 @@
 /* colors */
 
-$black: #303030;
-$green: #7eb252;
-$lightgreen: #a4c58c;
-$darkgreen: #3e7311;
+$black: #040404;
+$orange: #FDBA12;
+$orange-light: #FDC12A;
 
 /* mixins */
 @mixin title {
@@ -51,26 +50,19 @@ $phones: 480px;
 /* media */
 @import "layout/media.scss";
 
+/* fonts */
+@import "layout/fonts.scss";
+
 /* base settings */
 @import "layout/base.scss";
 
 
 /* blocks */
-@import "./blocks/hero.scss";
 @import "./blocks/header.scss";
-@import "./blocks/window.scss";
-@import "./blocks/form.scss";
-@import "./blocks/features.scss";
-@import "./blocks/problems.scss";
-@import "./blocks/reviews-window.scss";
-@import "./blocks/popular.scss";
-@import "./blocks/popular-window.scss";
-@import "./blocks/history.scss";
-@import "./blocks/history-window.scss";
-@import "./blocks/quote.scss";
-@import "./blocks/gift.scss";
-@import "./blocks/reviews.scss";
-@import "./blocks/create.scss";
-@import "./blocks/quality.scss";
-@import "./blocks/quality-window.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/main-content.scss";
+@import "./blocks/about.scss";
+@import "./blocks/aside.scss";
+@import "./blocks/cssmenu.scss";
 @import "./blocks/footer.scss";

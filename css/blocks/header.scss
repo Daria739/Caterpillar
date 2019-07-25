@@ -1,39 +1,45 @@
 .header {
+    width: 100%;
+    background-color: $black;
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        background-color: $orange-light;
+        height: 18px;
+    }
+}
+
+.header__top {
+    padding: 20px 0;
+}
+
+.header__container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-
-    padding-top: 1.063rem;
-    padding-bottom: 1.188rem;
-}
-
-.header__logo {
-    margin-right: 1.938rem;
-    text-decoration: none;
-}
-
-.header__col {
-    display: flex;
     align-items: center;
 }
 
-.header__delivery {
-    color: #9a9a9a;
-}
+.header__bottom {
+    width: 100%;
+    background-color: $orange;
 
-.header__phone-icon {
-    margin-right: 0.688em;
-}
+    padding: 25px;
 
-.header__phone-content {
-    text-decoration: none;
-    color: $black;
-    font-size: 1.250rem;
-    font-weight: 500;
 
 }
 
-.header__phone-subtitle {
-    font-size: 0.750rem;
-    color: #9a9a9a;
-    text-align: right;
+.header__title {
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: 0.02em;
+
+    color: #0B0700;
+
+
 }
