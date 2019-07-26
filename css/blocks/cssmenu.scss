@@ -13,35 +13,34 @@
 #cssmenu {
     color: #ffffff;
     font-family: Roboto,sans-serif;
-    width: auto;
-    margin-left: 85px;
-    margin-top: 3%;
+    width: 330px;
 }
 #cssmenu ul ul {
     display: none;
 }
 #cssmenu > ul > li > a {
-    background: rgb(240, 240, 240);
+    //background: #f5f5f5;
     color: $black;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     padding: 15px 20px;
     text-decoration: none;
+    border: 1px solid #eeeeee;
     z-index: 2;
 
     span {
-        text-transform: uppercase;
     }
 }
 #cssmenu > ul > li > a:hover,
 #cssmenu > ul > li.active > a,
 #cssmenu > ul > li.open > a {
     background: $orange; /* Old browsers */
-    
+    border: none;
     color: $black;
 }
 #cssmenu > ul > li.open > a {
+    
 }
 #cssmenu > ul > li:last-child > a,
 #cssmenu > ul > li.last > a {
@@ -66,8 +65,8 @@
     z-index: 10;
 }
 .holder:after {
-    border-left: 2px solid $orange;
-    border-top: 2px solid $orange;
+    border-left: 2px solid $black;
+    border-top: 2px solid $black;
     top: 17px;
 }
 #cssmenu > ul > li > a:hover > span:after,

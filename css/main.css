@@ -34,10 +34,10 @@ body {
   overflow: hidden; }
 
 .container {
-  max-width: 1080px;
+  max-width: 1180px;
   margin: 0 auto;
   position: relative;
-  width: 95%;
+  width: 94%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,8 +110,8 @@ button {
   font-weight: bold;
   font-size: 40px;
   line-height: 55px;
-  letter-spacing: 0.02em;
-  color: #0B0700; }
+  color: #0B0700;
+  text-transform: uppercase; }
 
 .menu__list {
   display: -webkit-box;
@@ -156,7 +156,10 @@ button {
   .contacts__mail:hover svg {
     fill: #fff; }
 
-.main__container {
+.main__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -193,10 +196,16 @@ button {
     transform: matrix(0.71, -0.77, 0.65, 0.71, 0, 0); }
 
 .about__img {
-  margin-bottom: 40px; }
+  max-height: 200px;
+  margin-bottom: 30px; }
 
 .about__img-pic {
-  max-width: 855px; }
+  width: 100%;
+  max-height: 220px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top; }
 
 .about__text {
   font-family: Roboto;
@@ -208,9 +217,7 @@ button {
     margin-bottom: 10px; }
 
 .sidebar {
-  width: auto;
-  margin-left: 6%;
-  margin-top: 7%; }
+  background-color: #FDBA12; }
 
 #cssmenu, #cssmenu ul, #cssmenu ul li, #cssmenu ul li a {
   border: 0 none;
@@ -227,30 +234,27 @@ button {
 #cssmenu {
   color: #ffffff;
   font-family: Roboto,sans-serif;
-  width: auto;
-  margin-left: 85px;
-  margin-top: 3%; }
+  width: 330px; }
 
 #cssmenu ul ul {
   display: none; }
 
 #cssmenu > ul > li > a {
-  background: #f0f0f0;
   color: #040404;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   padding: 15px 20px;
   text-decoration: none;
+  border: 1px solid #eeeeee;
   z-index: 2; }
-  #cssmenu > ul > li > a span {
-    text-transform: uppercase; }
 
 #cssmenu > ul > li > a:hover,
 #cssmenu > ul > li.active > a,
 #cssmenu > ul > li.open > a {
   background: #FDBA12;
   /* Old browsers */
+  border: none;
   color: #040404; }
 
 .holder {
@@ -274,8 +278,8 @@ button {
   z-index: 10; }
 
 .holder:after {
-  border-left: 2px solid #FDBA12;
-  border-top: 2px solid #FDBA12;
+  border-left: 2px solid #040404;
+  border-top: 2px solid #040404;
   top: 17px; }
 
 #cssmenu > ul > li > a:hover > span:after,
