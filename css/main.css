@@ -246,7 +246,6 @@ button {
   font-weight: bold;
   padding: 15px 20px;
   text-decoration: none;
-  border: 1px solid #eeeeee;
   z-index: 2; }
 
 #cssmenu > ul > li > a:hover,
