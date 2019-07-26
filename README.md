@@ -1,2 +1,1 @@
-# Swedish-Bitter
 # Caterpillar
