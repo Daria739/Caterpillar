@@ -26,6 +26,7 @@
 .cards__item {
     font-weight: 800;
     margin-bottom: 20px;
+    list-style-type: disc;
 }
 
 
@@ -69,5 +70,24 @@
 
     &:hover{
         background-color: darken($orange, 6%);
+    }
+}
+
+.oils__list {
+    max-height: 460px;
+}
+
+.oils__text {
+    &:first-child {
+
+        text-decoration: none;
+        font-weight: normal;
+    }
+}
+
+.systems__list {
+    max-height: 1500px;
+    li {
+        max-width: 33%;
     }
 }

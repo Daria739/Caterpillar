@@ -408,7 +408,8 @@ button {
 
 .cards__item {
   font-weight: 800;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  list-style-type: disc; }
 
 .cards__main-text-add {
   text-decoration: underline;
@@ -451,5 +452,17 @@ button {
   transition: background-color .25s ease; }
   .cards__button:hover {
     background-color: #eeab02; }
+
+.oils__list {
+  max-height: 460px; }
+
+.oils__text:first-child {
+  text-decoration: none;
+  font-weight: normal; }
+
+.systems__list {
+  max-height: 1500px; }
+  .systems__list li {
+    max-width: 33%; }
 
 /*# sourceMappingURL=main.css.map */
