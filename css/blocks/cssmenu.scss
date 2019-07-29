@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #cssmenu, #cssmenu ul, #cssmenu ul li, #cssmenu ul li a {
     border: 0 none;
     -webkit-box-sizing: border-box;
@@ -133,4 +134,141 @@
 #cssmenu ul ul li.open > a:after,
 #cssmenu ul ul li > a:hover:after {
     border-color: #ffffff;
+=======
+#cssmenu, #cssmenu ul, #cssmenu ul li, #cssmenu ul li a {
+    border: 0 none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    line-height: 1;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#cssmenu {
+    color: #ffffff;
+    font-family: Roboto,sans-serif;
+    width: 330px;
+}
+#cssmenu ul ul {
+    display: none;
+}
+#cssmenu > ul > li > a {
+    //background: #f5f5f5;
+    color: $black;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 20px;
+    text-decoration: none;
+    z-index: 2;
+
+    span {
+    }
+}
+#cssmenu > ul > li > a:hover,
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li.open > a {
+    background: $orange; /* Old browsers */
+    border: none;
+    color: $black;
+}
+#cssmenu > ul > li.open > a {
+    
+}
+#cssmenu > ul > li:last-child > a,
+#cssmenu > ul > li.last > a {
+}
+.holder {
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+}
+.holder:after, .holder:before {
+    content: "";
+    display: block;
+    height: 6px;
+    position: absolute;
+    right: 20px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    width: 6px;
+    z-index: 10;
+}
+.holder:after {
+    border-left: 2px solid $black;
+    border-top: 2px solid $black;
+    top: 17px;
+}
+#cssmenu > ul > li > a:hover > span:after,
+#cssmenu > ul > li.active > a > span:after,
+#cssmenu > ul > li.open > a > span:after {
+    border-color: $black;
+}
+.holder:before {
+    top: 18px;
+}
+#cssmenu ul ul li a {
+    background:#49505a;
+    border-bottom: 1px solid #32373e;
+    border-left: 1px solid #32373e;
+    border-right: 1px solid #32373e;
+    color: #eeeeee;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 10px 20px;
+    text-decoration: none;
+    z-index: 1;
+}
+#cssmenu ul ul li:hover > a,
+#cssmenu ul ul li.open > a,
+#cssmenu ul ul li.active > a {
+    background: none repeat scroll 0 0 #424852;
+    color: #ffffff;
+}
+#cssmenu ul ul li:first-child > a {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#cssmenu ul ul ul li:first-child > a {
+}
+#cssmenu ul ul ul li a {
+    padding-left: 30px;
+}
+#cssmenu > ul > li > ul > li:last-child > a,
+#cssmenu > ul > li > ul > li.last > a {
+    border-bottom: 0 none;
+}
+#cssmenu > ul > li > ul > li.open:last-child > a,
+#cssmenu > ul > li > ul > li.last.open > a {
+    border-bottom: 1px solid #32373e;
+}
+#cssmenu > ul > li > ul > li.open:last-child > ul > li:last-child > a {
+    border-bottom: 0 none;
+}
+#cssmenu ul ul li.has-sub > a:after {
+    border-left: 2px solid #eeeeee;
+    border-top: 2px solid #eeeeee;
+    content: "";
+    display: block;
+    height: 5px;
+    position: absolute;
+    right: 20px;
+    top: 11.5px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    width: 5px;
+    z-index: 10;
+}
+#cssmenu ul ul li.active > a:after,
+#cssmenu ul ul li.open > a:after,
+#cssmenu ul ul li > a:hover:after {
+    border-color: #ffffff;
+>>>>>>> e73cf2b8d570c57727c1631aee4f0267546ba4e6
 }

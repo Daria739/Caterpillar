@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .main__content {
     display: flex;
     flex-direction: row;
@@ -6,4 +7,14 @@
 
 .main {
     padding-bottom: 40px;
+=======
+.main__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main {
+    padding-bottom: 40px;
+>>>>>>> e73cf2b8d570c57727c1631aee4f0267546ba4e6
 }
