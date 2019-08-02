@@ -465,4 +465,64 @@ button {
   .systems__list li {
     max-width: 33%; }
 
+table {
+  border: 1px solid black;
+  border-collapse: collapse; }
+
+td {
+  border: 1px solid black;
+  padding: 10px; }
+
+th {
+  background-color: #FDBA12;
+  padding: 12px; }
+
+.table__title {
+  font-weight: bold;
+  background-color: #f5f3f3; }
+
+.cards__img-pic {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: contain;
+  object-fit: contain; }
+
+.no-list-style {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-height: 100%; }
+  .no-list-style li {
+    height: 200px;
+    list-style: none;
+    margin-bottom: 5%;
+    margin-right: 5%; }
+    .no-list-style li:last-child {
+      margin-right: 0; }
+
+.cards__title {
+  display: block;
+  font-family: Roboto Condensed; }
+
+.cards__assort-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-height: 100px;
+  margin-bottom: 4%; }
+  .cards__assort-list li {
+    font-weight: bold;
+    font-size: 15px;
+    list-style: disc; }
+
 /*# sourceMappingURL=main.css.map */
