@@ -1,0 +1,29 @@
+.contacts__phone-link,
+.contacts__mail-link {
+
+font-family: Roboto Condensed;
+line-height: 18px;
+
+color: $orange;
+text-decoration: none;
+margin-left: 10px;
+
+
+}
+
+.contacts__phone,
+.contacts__mail {
+    transition-duration: .5s;
+
+    &:hover {
+        
+        .contacts__phone-link,
+        .contacts__mail-link {
+            color: #fff;
+        }
+
+        svg {
+            fill: #fff;
+        }
+    }
+}

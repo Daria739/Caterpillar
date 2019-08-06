@@ -1,0 +1,50 @@
+.header {
+    width: 100%;
+    background-color: $black;
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        background-color: $orange-light;
+        height: 18px;
+    }
+}
+
+.header__top {
+    padding: 20px 0;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__bottom {
+    width: 100%;
+    background-color: $orange;
+
+    padding: 25px;
+
+
+}
+
+.header__title {
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 55px;
+
+    color: #0B0700;
+    text-transform: uppercase;
+
+
+}
+
+.header__title-link {
+    text-decoration: none;
+    color: #0B0700;
+}

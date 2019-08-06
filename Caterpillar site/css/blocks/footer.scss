@@ -1,0 +1,37 @@
+.footer {
+    padding: 20px 0;
+    background-color: $black;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__menu {
+    .menu__list {
+        flex-wrap: wrap;
+        flex-wrap: wrap;
+        max-height: 85px;
+        flex-direction: column;
+        .menu__item {
+            margin-right: 45px;
+        }
+    }
+}
+
+.footer__copy {
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+
+
+}

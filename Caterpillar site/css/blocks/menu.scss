@@ -1,0 +1,162 @@
+.menu__list {
+    display: flex;
+}
+
+.menu__item {
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.menu__link {
+
+    font-family: Roboto Condensed;
+    line-height: 18px;
+    text-decoration: none;
+
+    color: #FFFFFF;
+
+    transition: color .5s ease;
+
+    &:hover {
+        color: $orange;
+    }
+}
+
+.menu__link_sub:after {
+    content: "";
+    margin-left: 6px;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 2%;
+    border: 5px solid transparent;	border-top: 5px solid #fff;
+}
+
+
+
+#menu li:hover a {
+    color: $orange;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3)inset;
+}
+#menu li:hover .sub-menu a {
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+}
+
+#menu li:hover .sub-menu a:hover {
+    color: $orange;
+}
+
+/* стили для выпадающего списка */
+
+.sub-menu {
+  visibility:hidden;
+  opacity:0;
+  position:absolute;
+  z-index:-1;
+  transition:visibility 0s linear 0.5s, opacity 0.5s linear;
+  left: 92px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 2%;
+  background-color: $black;
+  font-family: Roboto Condensed;
+}
+.sub-menu_oils {
+    left: 250px;
+}
+.sub-menu_filters {
+    left: 400px;
+}
+.sub-menu_sub {
+    left: 60%;
+    top: 5%;
+    font-size: 15px;
+    background-color: #1f1f20;
+
+}
+.sub-menu_sub_bulldozers {
+    top: 18%;
+}
+.sub-menu_sub_tippers {
+    top: 28%;
+}
+.sub-menu_sub_cutters {
+    top: 37%;
+    left: 86%;
+}
+.sub-menu_sub_chassis {
+    top: 56%;
+}
+.sub-menu_sub_filters {
+    left: 75%;
+    top: 30%;
+
+}
+
+#menu li:hover > ul{
+   visibility:visible;
+   opacity:1;
+   transition-delay:0s;
+   z-index:1;
+}
+
+#menu .sub-menu li {
+    float:none ;
+}
+
+#menu .sub-menu li a {
+        width: auto;
+        min-width: 100%;
+        padding: 0 4px;
+        white-space:nowrap;
+        text-align:center;
+        border:none;
+        box-shadow:none;
+       
+        text-decoration: none;
+        color: #fff;
+}
+
+#menu li a:hover + .sub-menu, .sub-menu:hover {
+        display: block;
+}
+
+/* стили для адаптивности */
+
+@media screen and (max-width : 760px){
+
+.sub-menu {
+        position: static;
+        display: none;                
+}
+
+.sub-menu li {
+        margin-bottom: 1px;
+}
+#menu li, #menu li a {
+        width: 100%;
+        border:none;
+        padding:0px;
+}
+        
+#menu .sub-menu li a {
+        padding:0px;
+}
+        
+#menu  {
+    width: 100%;
+    }
+}
+
+
+
+.sub-menu__has-sub::after {
+    content: "";
+    display: inline-block;
+    border: 5px solid transparent;	border-left: 5px solid #fff;
+}

@@ -1,0 +1,184 @@
+.cards {
+    margin-left: 5%;
+}
+
+.cards__main-text {
+    
+    font-weight: bold;
+    font-family: Roboto Condensed;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+
+    margin-bottom: 20px;
+
+    &:first-child,
+    {
+        text-decoration: underline;
+    }
+
+    &:last-child {
+        margin-top: 30px;
+    }
+}
+
+.cards__item {
+    font-weight: 800;
+    margin-bottom: 20px;
+    list-style-type: disc;
+}
+
+
+.cards__main-text-add {
+    text-decoration: underline;
+    margin-bottom: 10px;
+    
+}
+
+.cards__phone {
+    color: $orange;
+    text-decoration: none;
+}
+
+.cards__link {
+    color: $orange;
+    text-decoration: none;
+}
+
+.cards__list {
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    flex-wrap: wrap;
+}
+
+.cards__button {
+    padding: 20px;
+    background-color: $orange;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 30px 0;
+    display: block;
+    max-width: 200px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+
+    transition: background-color .25s ease;
+
+    &:hover{
+        background-color: darken($orange, 6%);
+    }
+}
+
+.oils__list {
+    max-height: 460px;
+}
+
+.oils__text {
+    &:first-child {
+
+        text-decoration: none;
+        font-weight: normal;
+    }
+}
+
+.systems__list {
+    max-height: 1500px;
+    li {
+        max-width: 33%;
+    }
+}
+
+
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+th {
+    background-color: $orange;
+    padding: 12px;
+}
+
+.table__title {
+    font-weight: bold;
+    background-color: rgb(245, 243, 243);
+   // border-bottom: 3px solid $orange;
+}
+
+.cards__img-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.no-list-style {
+    flex-direction: row;
+    align-items: center;
+    max-height: 100%;
+
+    li {
+        list-style: none;
+        margin-bottom: 5%;
+        margin-right: 5%;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.cards__title {
+    display: block;
+    max-width: 230px;
+    font-family: Roboto Condensed;
+    font-size: 17px;
+    margin-top: 2%;
+}
+
+.cards__assort-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 100px;
+    margin-bottom: 4%;
+    li {
+        font-weight: bold;
+        font-size: 15px;
+        list-style: disc ;
+    }
+}
+
+.greases__title {
+    text-transform: uppercase;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.cards__desc {
+    font-size: 15px;
+    font-weight: normal;
+    max-width: 230px;
+    
+    margin-top: 10px;
+
+}
+
+.grease__item {
+    width: 25%;
+}
+
+.engine-parts {
+    max-width: 230px;
+}
